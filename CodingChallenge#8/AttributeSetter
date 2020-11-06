@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Person{
+  private:
+  string name;
+  int speed=0;
+  public:
+  void setName(string a){name=a;}
+  string getName(){cout<<name<<endl; return this->name;}
+  void setSpeed(int a){speed=a;}
+  int getSpeed(){cout<<speed<<endl; return this->speed;}
+};
+
+int main(){
+  Person Bob;
+  Bob.setName("Bob");
+  Bob.getName();
+  Bob.setSpeed(17);
+  Bob.getSpeed();
+}
